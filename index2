@@ -7,25 +7,19 @@
 		
 		<script>
 			function carregar(){
-				
-				// chamar a API do random dog
+				//Chamar a API do Random Dog
 				var sUrl = "https://random.dog/woof.json";
-				$.get(sUrl, function(oResponse){
-					
-					$("#imagem").attr("src", oResponse.url);
-				});
+				$.get(sUrl);
 				
+				$("#imagem").attr("src", "https://random.dog/cfec1b71-28cb-4eb2-b1a9-60cf432f2346.jpg")
 			}
 		</script>
-		
 	</head>
 	<body>
 		<main>
-			<button onclick="carregar()" >Carregar Imagem</button>
+			<button onclick="carregar()">Carregar Imagem</button>
 			<br />
-			<img id="imagem" src=""  />
-			
-			
+			<img id="imagem" src="" />
 		</main>
 	</body>
 </html>
